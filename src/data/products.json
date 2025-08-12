@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Custom Water Bottle",
+    "category": "Drinkware",
+    "price": "$12.99",
+    "image": "/api/placeholder/300/300",
+    "colors": ["#2563eb", "#059669", "#dc2626", "#7c3aed", "#ea580c"],
+    "description": "Stainless steel water bottle with custom logo printing"
+  },
+  {
+    "id": 2,
+    "name": "Promotional Tote Bag",
+    "category": "Bags",
+    "price": "$8.99",
+    "image": "/api/placeholder/300/300",
+    "colors": ["#1f2937", "#7c2d12", "#166534", "#1e40af", "#7c3aed"],
+    "description": "Eco-friendly canvas tote bag perfect for brand promotion"
+  },
+  {
+    "id": 3,
+    "name": "Custom Coffee Mug",
+    "category": "Drinkware",
+    "price": "$9.99",
+    "image": "/api/placeholder/300/300",
+    "colors": ["#ffffff", "#1f2937", "#059669", "#dc2626", "#f59e0b"],
+    "description": "Ceramic coffee mug with full-color custom printing"
+  },
+  {
+    "id": 4,
+    "name": "Branded T-Shirt",
+    "category": "Apparel",
+    "price": "$15.99",
+    "image": "/api/placeholder/300/300",
+    "colors": ["#1f2937", "#ffffff", "#dc2626", "#166534", "#1e40af"],
+    "description": "100% cotton t-shirt with screen printing or embroidery"
+  },
+  {
+    "id": 5,
+    "name": "Custom Pen Set",
+    "category": "Office",
+    "price": "$4.99",
+    "image": "/api/placeholder/300/300",
+    "colors": ["#1e40af", "#1f2937", "#dc2626", "#059669", "#7c3aed"],
+    "description": "Professional ballpoint pens with logo imprint"
+  },
+  {
+    "id": 6,
+    "name": "Promotional Notebook",
+    "category": "Office",
+    "price": "$6.99",
+    "image": "/api/placeholder/300/300",
+    "colors": ["#1f2937", "#7c2d12", "#1e40af", "#059669", "#dc2626"],
+    "description": "High-quality notebook with custom cover design"
+  },
+  {
+    "id": 7,
+    "name": "Custom Cap",
+    "category": "Apparel",
+    "price": "$13.99",
+    "image": "/api/placeholder/300/300",
+    "colors": ["#1f2937", "#dc2626", "#1e40af", "#059669", "#ffffff"],
+    "description": "Adjustable cap with embroidered logo"
+  },
+  {
+    "id": 8,
+    "name": "Phone Stand",
+    "category": "Tech",
+    "price": "$11.99",
+    "image": "/api/placeholder/300/300",
+    "colors": ["#1f2937", "#7c3aed", "#1e40af", "#dc2626", "#f59e0b"],
+    "description": "Adjustable phone stand with custom branding"
+  }
+]
