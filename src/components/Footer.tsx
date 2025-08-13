@@ -37,7 +37,7 @@ const Footer = () => {
 
     setIsSubmitting(true);
 
-    // Simulate API call
+    // SUBSCRIBE SUCCESSFULL POPUP
     try {
       await new Promise(resolve => setTimeout(resolve, 1000));
       

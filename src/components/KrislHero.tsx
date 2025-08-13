@@ -4,6 +4,8 @@ import { useEffect } from "react";
 
 const KrislHero = () => {
   // Preload critical images for better performance
+
+
   useEffect(() => {
     const criticalImages = [
       "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=300&h=400&fit=crop&crop=center",
@@ -48,6 +50,9 @@ const KrislHero = () => {
           </div>
 
           {/* Right Content - 3 Tumblers matching reference */}
+
+
+          
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="flex items-center gap-4 lg:gap-6">
               {/* Pink Tumbler */}

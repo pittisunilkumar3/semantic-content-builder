@@ -19,9 +19,15 @@ const KrislBlogSection = () => {
     }
   ];
 
+
+
+
+
+
   return (
     <section className="py-16 lg:py-20 bg-gray-50">
       <div className="container mx-auto px-4">
+
         {/* Section Header */}
         <div className="text-center mb-12 lg:mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
@@ -30,6 +36,7 @@ const KrislBlogSection = () => {
         </div>
 
         {/* Blog Grid */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
           {blogPosts.map((post) => (
             <Card key={post.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden bg-white border-0 shadow-lg">

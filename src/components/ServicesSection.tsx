@@ -44,6 +44,9 @@ const ServicesSection = () => {
   return (
     <section id="services" className="py-20 bg-background">
       <div className="container mx-auto px-4">
+
+
+
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground">
@@ -99,6 +102,9 @@ const ServicesSection = () => {
         </div>
 
         {/* CTA Section */}
+
+
+        
         <div className="mt-16 text-center bg-secondary/50 rounded-2xl p-8 md:p-12">
           <h3 className="text-2xl md:text-3xl font-bold mb-4 text-foreground">
             Ready to Get Started?

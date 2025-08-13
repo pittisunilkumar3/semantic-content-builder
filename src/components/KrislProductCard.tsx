@@ -27,7 +27,10 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
     <Card className="group relative overflow-hidden border-0 shadow-md hover:shadow-xl focus-within:shadow-xl transition-all duration-300 bg-white focus-within:ring-2 focus-within:ring-orange-400 focus-within:ring-offset-2">
       {/* Image Container */}
       <div className="relative overflow-hidden bg-gray-50">
-        {/* SALE Badge */}
+
+
+
+
         {product.isOnSale && (
           <div className="absolute top-3 left-3 z-10">
             <Badge className="bg-red-500 hover:bg-red-600 text-white font-semibold px-2 py-1 text-xs">
@@ -42,6 +45,8 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
           className="w-full h-56 sm:h-64 lg:h-72 object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
         />
+
+
 
         {/* Overlay Actions */}
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300 flex items-center justify-center">
@@ -90,6 +95,12 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
         )}
       </div>
 
+
+
+
+
+
+
       <CardContent className="p-4 lg:p-6">
         {/* Product Name */}
         <h3 className="font-semibold text-gray-900 mb-3 line-clamp-2 text-base lg:text-lg leading-tight">
@@ -114,7 +125,15 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
           ))}
         </div>
 
+
+
+
+
+
+
         {/* Price */}
+
+        
         <div className="text-xl lg:text-2xl font-bold text-gray-900">
           {product.price}
         </div>

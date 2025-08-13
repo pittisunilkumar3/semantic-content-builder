@@ -41,7 +41,10 @@ const KrislBrandGallery = () => {
   return (
     <section className="py-12 lg:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
+
         {/* Gallery Grid - No header to match reference */}
+
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
           {galleryImages.map((item) => (
             <div key={item.id} className="group relative overflow-hidden rounded-lg shadow-sm hover:shadow-lg transition-all duration-300">

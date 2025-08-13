@@ -34,9 +34,15 @@ const ProductsSection = () => {
   }, []);
 
   // Get unique categories
+
+
+  
   const categories = ["All", ...Array.from(new Set(products.map(product => product.category)))];
 
   // Filter products by category
+
+
+
   useEffect(() => {
     if (activeCategory === "All") {
       setFilteredProducts(products);

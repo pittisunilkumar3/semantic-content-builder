@@ -49,6 +49,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </Button>
 
         {/* Category Badge */}
+
+
+
         <Badge 
           variant="secondary" 
           className="absolute top-2 left-2 bg-primary text-primary-foreground"
@@ -58,6 +61,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
       </div>
 
       <CardContent className="p-4">
+
+
+
         {/* Product Name */}
         <h3 className="font-semibold text-lg mb-2 line-clamp-1 text-card-foreground">
           {product.name}
@@ -69,6 +75,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </p>
 
         {/* Color Options */}
+
+
+
+
         <div className="flex items-center space-x-1 mb-3">
           <span className="text-xs text-muted-foreground mr-2">Colors:</span>
           {product.colors.map((color, index) => (
@@ -87,6 +97,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         </div>
 
         {/* Price */}
+
+
+
         <div className="flex items-center justify-between">
           <span className="text-xl font-bold text-primary">
             {product.price}
@@ -101,7 +114,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <Button 
           className="w-full bg-primary hover:bg-primary-hover text-primary-foreground transition-colors duration-200"
           onClick={() => {
+
+            
             // Add to cart functionality would go here
+
+
+
             console.log('Added to cart:', product.name, 'Color:', selectedColor);
           }}
         >

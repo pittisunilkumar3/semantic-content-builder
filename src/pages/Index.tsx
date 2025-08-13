@@ -8,6 +8,10 @@ import KrislLifestyleSection from "@/components/KrislLifestyleSection";
 import KrislBrandGallery from "@/components/KrislBrandGallery";
 import KrislFooter from "@/components/KrislFooter";
 
+
+
+
+
 const Index = () => {
   return (
     <div className="min-h-screen">

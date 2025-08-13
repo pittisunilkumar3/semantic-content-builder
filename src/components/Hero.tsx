@@ -11,6 +11,9 @@ const Hero = () => {
       />
       
       {/* Content */}
+
+
+
       <div className="relative z-10 container mx-auto px-4 py-20 text-center">
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
@@ -20,6 +23,8 @@ const Hero = () => {
           </div>
 
           {/* Main Heading */}
+
+
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
             Custom Promotional
             <span className="block text-accent-foreground">Items with Your Logo</span>
@@ -31,7 +36,8 @@ const Hero = () => {
             From water bottles to apparel, we customize everything with your logo.
           </p>
 
-          {/* CTA Buttons */}
+
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
               size="lg" 

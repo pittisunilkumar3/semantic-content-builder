@@ -28,8 +28,14 @@ const KrislHeader = () => {
         </div>
 
         {/* Main Header */}
+
+
+
+
         <div className="flex h-16 items-center justify-between">
+
           {/* Logo */}
+
           <div className="flex items-center space-x-2">
             <div className="text-2xl lg:text-3xl font-bold">
               <span className="text-white">K</span><span className="text-orange-400">risl</span>
@@ -37,6 +43,8 @@ const KrislHeader = () => {
           </div>
 
           {/* Desktop Navigation */}
+
+
           <nav className="hidden lg:flex items-center space-x-6">
             <a href="#" className="text-sm font-medium hover:text-orange-400 transition-colors">PRODUCTS</a>
             <a href="#" className="text-sm font-medium hover:text-orange-400 transition-colors">TEMPLATES</a>
@@ -47,6 +55,8 @@ const KrislHeader = () => {
           </nav>
 
           {/* Desktop Actions */}
+
+
           <div className="hidden md:flex items-center space-x-3">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
@@ -68,6 +78,8 @@ const KrislHeader = () => {
           </div>
 
           {/* Mobile Menu Button */}
+
+
           <Button
             variant="ghost"
             size="icon"
@@ -86,6 +98,8 @@ const KrislHeader = () => {
         </div>
 
         {/* Mobile Menu */}
+
+        
         {isMobileMenuOpen && (
           <div id="mobile-menu" className="md:hidden border-t border-gray-800" role="navigation" aria-label="Mobile navigation menu">
             <div className="py-4 space-y-4">

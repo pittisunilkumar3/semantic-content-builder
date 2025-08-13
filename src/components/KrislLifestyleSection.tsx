@@ -3,7 +3,12 @@ const KrislLifestyleSection = () => {
     <section className="py-12 lg:py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+
+
           {/* Left Image - Person with Sunglasses */}
+
+
+
           <div className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
             <div className="aspect-[4/3] overflow-hidden">
               <img
@@ -14,6 +19,8 @@ const KrislLifestyleSection = () => {
               />
             </div>
             {/* Text Overlay */}
+
+
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end">
               <div className="p-4 lg:p-6 text-white">
                 <h3 className="text-lg lg:text-xl font-bold mb-2">
@@ -27,6 +34,9 @@ const KrislLifestyleSection = () => {
           </div>
 
           {/* Right Image - Person in Plaid Shirt */}
+
+
+
           <div className="relative group overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
             <div className="aspect-[4/3] overflow-hidden">
               <img
@@ -36,7 +46,8 @@ const KrislLifestyleSection = () => {
                 loading="lazy"
               />
             </div>
-            {/* Text Overlay */}
+
+
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent flex items-end">
               <div className="p-4 lg:p-6 text-white">
                 <h3 className="text-lg lg:text-xl font-bold mb-2">

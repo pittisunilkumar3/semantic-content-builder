@@ -13,6 +13,7 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container mx-auto px-4">
+
         {/* Main Header */}
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -21,6 +22,7 @@ const Header = () => {
           </div>
 
           {/* Desktop Navigation */}
+
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#home" className="text-foreground hover:text-primary transition-colors">
               Home
@@ -39,7 +41,8 @@ const Header = () => {
             </a>
           </nav>
 
-          {/* Desktop Search & Actions */}
+          {/* Desktop Search*/}
+
           <div className="hidden md:flex items-center space-x-4">
             <div className="relative">
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
@@ -58,6 +61,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
+
           <Button
             variant="ghost"
             size="icon"
@@ -76,7 +80,6 @@ const Header = () => {
         {isMobileMenuOpen && (
           <div className="md:hidden border-t">
             <div className="py-4 space-y-4">
-              {/* Mobile Search */}
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
                 <Input
@@ -85,6 +88,9 @@ const Header = () => {
                   className="pl-10"
                 />
               </div>
+
+
+
 
               {/* Mobile Navigation */}
               <nav className="flex flex-col space-y-2">
@@ -95,6 +101,7 @@ const Header = () => {
                 >
                   Home
                 </a>
+
                 <a
                   href="#products"
                   className="block py-2 px-4 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
@@ -102,6 +109,7 @@ const Header = () => {
                 >
                   Products
                 </a>
+
                 <a
                   href="#services"
                   className="block py-2 px-4 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
@@ -109,6 +117,7 @@ const Header = () => {
                 >
                   Services
                 </a>
+
                 <a
                   href="#about"
                   className="block py-2 px-4 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
@@ -116,6 +125,7 @@ const Header = () => {
                 >
                   About
                 </a>
+
                 <a
                   href="#contact"
                   className="block py-2 px-4 text-foreground hover:text-primary hover:bg-secondary rounded-md transition-colors"
@@ -123,6 +133,7 @@ const Header = () => {
                 >
                   Contact
                 </a>
+
               </nav>
 
               {/* Mobile Actions */}

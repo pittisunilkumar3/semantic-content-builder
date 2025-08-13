@@ -22,7 +22,7 @@ const AboutSection = () => {
     <section id="about" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content Side */}
+          {/* Side  Content*/}
           <div className="order-2 lg:order-1">
             <div className="mb-6">
               <span className="text-primary font-semibold text-sm uppercase tracking-wide">
@@ -46,7 +46,12 @@ const AboutSection = () => {
               traditional craftsmanship to create products that truly represent your brand.
             </p>
 
-            {/* Benefits List */}
+            
+
+            {/* Bene List */}
+
+
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-8">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex items-start space-x-3">
@@ -88,7 +93,12 @@ const AboutSection = () => {
               })}
             </div>
 
+
+
             {/* Testimonial Card */}
+
+
+
             <div className="bg-background rounded-xl p-6 shadow-lg mt-6">
               <div className="flex items-center mb-4">
                 {[...Array(5)].map((_, i) => (

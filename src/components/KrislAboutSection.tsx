@@ -6,6 +6,8 @@ const KrislAboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Left Content - Image */}
+
+
           <div className="order-2 lg:order-1">
             <div className="relative">
               <img
@@ -18,6 +20,8 @@ const KrislAboutSection = () => {
           </div>
 
           {/* Right Content - Text */}
+
+          
           <div className="order-1 lg:order-2 max-w-xl">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6 text-gray-900">
               ABOUT US

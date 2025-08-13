@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Krisl promotional products design system - exact replica */
+/* Krisl promotional products CSS*/
 
 @layer base {
   :root {
@@ -115,18 +115,26 @@
   }
 
   /* Smooth scrolling */
+  
   html {
     scroll-behavior: smooth;
   }
 
   /* Focus styles for accessibility */
+
   button:focus-visible,
   input:focus-visible,
   a:focus-visible {
     @apply outline-2 outline-offset-2 outline-orange-500;
   }
 
+
+
+
+
   /* Line clamp utilities */
+
+
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
