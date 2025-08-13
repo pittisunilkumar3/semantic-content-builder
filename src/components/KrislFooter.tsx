@@ -60,11 +60,11 @@ const KrislFooter = () => {
 
   // Partner/Certification logos for top black section
   const partnerLogos = [
-    { name: "ASI", logo: "/api/placeholder/60/30" },
-    { name: "PPAI", logo: "/api/placeholder/60/30" },
-    { name: "SAGE", logo: "/api/placeholder/60/30" },
-    { name: "4imprint", logo: "/api/placeholder/60/30" },
-    { name: "Promotional Products Inc", logo: "/api/placeholder/60/30" }
+    { name: "ASI", logo: "/images/footer/partners/asi-logo.svg" },
+    { name: "PPAI", logo: "/images/footer/partners/ppai-logo.svg" },
+    { name: "SAGE", logo: "/images/footer/partners/sage-logo.svg" },
+    { name: "4imprint", logo: "/images/footer/partners/4imprint-logo.svg" },
+    { name: "Promotional Products Inc", logo: "/images/footer/partners/ppi-logo.svg" }
   ];
 
   const footerSections = {
@@ -87,8 +87,13 @@ const KrislFooter = () => {
   };
 
   const paymentLogos = [
-    { name: "Visa", logo: "/api/placeholder/40/25" },
-    { name: "Mastercard", logo: "/api/placeholder/40/25" }
+    { name: "Visa", logo: "/images/footer/payments/visa-logo.svg" },
+    { name: "Mastercard", logo: "/images/footer/payments/mastercard-logo.svg" },
+    
+  ];
+
+  const securityBadges = [
+    { name: "SSL Secure", logo: "/images/footer/certifications/ssl-secure.svg" }
   ];
 
   return (
@@ -219,21 +224,40 @@ const KrislFooter = () => {
       {/* Bottom Copyright Section */}
       <div className="bg-white border-t border-gray-200 py-4">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="text-gray-600 text-sm">
               © Promotional Products Industry. All rights reserved.
             </div>
-            <div className="flex items-center space-x-4">
-              <span className="text-gray-600 text-sm">Powered by:</span>
-              <div className="flex space-x-3">
-                {paymentLogos.map((payment, index) => (
-                  <img
-                    key={index}
-                    src={payment.logo}
-                    alt={payment.name}
-                    className="h-6 object-contain opacity-80 hover:opacity-100 transition-opacity"
-                  />
-                ))}
+            
+            <div className="flex flex-col md:flex-row items-center space-y-3 md:space-y-0 md:space-x-6">
+              {/* Payment Methods */}
+              <div className="flex items-center space-x-3">
+                <span className="text-gray-600 text-sm">We Accept:</span>
+                <div className="flex space-x-2">
+                  {paymentLogos.map((payment, index) => (
+                    <img
+                      key={index}
+                      src={payment.logo}
+                      alt={payment.name}
+                      className="h-5 object-contain opacity-80 hover:opacity-100 transition-opacity"
+                    />
+                  ))}
+                </div>
+              </div>
+              
+              {/* Security Badges */}
+              <div className="flex items-center space-x-3">
+                <span className="text-gray-600 text-sm">Security:</span>
+                <div className="flex space-x-2">
+                  {securityBadges.map((badge, index) => (
+                    <img
+                      key={index}
+                      src={badge.logo}
+                      alt={badge.name}
+                      className="h-6 object-contain opacity-80 hover:opacity-100 transition-opacity"
+                    />
+                  ))}
+                </div>
               </div>
             </div>
           </div>
