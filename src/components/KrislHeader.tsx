@@ -1,0 +1,130 @@
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Search, Menu, X, ShoppingCart, User, Heart } from "lucide-react";
+
+const KrislHeader = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  return (
+    <header className="bg-slate-900 text-white sticky top-0 z-50">
+      <div className="container mx-auto px-4">
+        {/* Top bar */}
+        <div className="border-b border-slate-700 py-2">
+          <div className="flex justify-between items-center text-sm">
+            <div className="flex space-x-4">
+              <span>FREE SHIPPING ON ORDERS $50+</span>
+            </div>
+            <div className="flex space-x-4">
+              <a href="#" className="hover:text-orange-400">CONTACT</a>
+              <a href="#" className="hover:text-orange-400">HELP</a>
+              <a href="#" className="hover:text-orange-400">ACCOUNT</a>
+            </div>
+          </div>
+        </div>
+
+        {/* Main Header */}
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center space-x-2">
+            <div className="text-2xl font-bold text-orange-400">Krisl</div>
+          </div>
+
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-8">
+            <a href="#" className="hover:text-orange-400 transition-colors">PRODUCTS</a>
+            <a href="#" className="hover:text-orange-400 transition-colors">TEMPLATES</a>
+            <a href="#" className="hover:text-orange-400 transition-colors">QUICK LINKS</a>
+            <a href="#" className="hover:text-orange-400 transition-colors">BLOG</a>
+            <a href="#" className="hover:text-orange-400 transition-colors">ABOUT US</a>
+            <a href="#" className="hover:text-orange-400 transition-colors">SELL ON KRISL</a>
+          </nav>
+
+          {/* Desktop Actions */}
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+              <Input
+                type="search"
+                placeholder="Search..."
+                className="pl-10 w-64 bg-slate-800 border-slate-600 text-white placeholder-gray-400"
+              />
+            </div>
+            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400">
+              <Heart className="h-5 w-5" />
+            </Button>
+            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400">
+              <User className="h-5 w-5" />
+            </Button>
+            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400">
+              <ShoppingCart className="h-5 w-5" />
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <Button
+            variant="ghost"
+            size="icon"
+            className="md:hidden text-white"
+            onClick={toggleMobileMenu}
+          >
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </Button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden border-t border-slate-700">
+            <div className="py-4 space-y-4">
+              {/* Mobile Search */}
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4" />
+                <Input
+                  type="search"
+                  placeholder="Search..."
+                  className="pl-10 bg-slate-800 border-slate-600 text-white placeholder-gray-400"
+                />
+              </div>
+
+              {/* Mobile Navigation */}
+              <nav className="flex flex-col space-y-2">
+                <a href="#" className="block py-2 px-4 hover:text-orange-400 hover:bg-slate-800 rounded transition-colors">PRODUCTS</a>
+                <a href="#" className="block py-2 px-4 hover:text-orange-400 hover:bg-slate-800 rounded transition-colors">TEMPLATES</a>
+                <a href="#" className="block py-2 px-4 hover:text-orange-400 hover:bg-slate-800 rounded transition-colors">QUICK LINKS</a>
+                <a href="#" className="block py-2 px-4 hover:text-orange-400 hover:bg-slate-800 rounded transition-colors">BLOG</a>
+                <a href="#" className="block py-2 px-4 hover:text-orange-400 hover:bg-slate-800 rounded transition-colors">ABOUT US</a>
+                <a href="#" className="block py-2 px-4 hover:text-orange-400 hover:bg-slate-800 rounded transition-colors">SELL ON KRISL</a>
+              </nav>
+
+              {/* Mobile Actions */}
+              <div className="flex space-x-2 pt-2">
+                <Button variant="ghost" className="flex-1 text-white hover:text-orange-400">
+                  <Heart className="h-4 w-4 mr-2" />
+                  Wishlist
+                </Button>
+                <Button variant="ghost" className="flex-1 text-white hover:text-orange-400">
+                  <User className="h-4 w-4 mr-2" />
+                  Account
+                </Button>
+                <Button variant="ghost" className="flex-1 text-white hover:text-orange-400">
+                  <ShoppingCart className="h-4 w-4 mr-2" />
+                  Cart
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+    </header>
+  );
+};
+
+export default KrislHeader;

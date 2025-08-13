@@ -1,74 +1,110 @@
 [
   {
     "id": 1,
-    "name": "Custom Water Bottle",
-    "category": "Drinkware",
-    "price": "$12.99",
-    "image": "/api/placeholder/300/300",
-    "colors": ["#2563eb", "#059669", "#dc2626", "#7c3aed", "#ea580c"],
-    "description": "Stainless steel water bottle with custom logo printing"
+    "name": "Custom Stainless Steel Tumbler",
+    "category": "Drinkware", 
+    "price": "$24.99",
+    "image": "/lovable-uploads/89f0f4dd-605f-4a91-b815-43d630cf70d6.png",
+    "colors": ["#E91E63", "#333333", "#00BCD4"],
+    "description": "20oz stainless steel tumbler with your custom logo"
   },
   {
     "id": 2,
-    "name": "Promotional Tote Bag",
-    "category": "Bags",
-    "price": "$8.99",
-    "image": "/api/placeholder/300/300",
-    "colors": ["#1f2937", "#7c2d12", "#166534", "#1e40af", "#7c3aed"],
-    "description": "Eco-friendly canvas tote bag perfect for brand promotion"
+    "name": "Eco-Friendly Water Bottle",
+    "category": "Drinkware",
+    "price": "$18.99", 
+    "image": "/api/placeholder/400/400",
+    "colors": ["#4CAF50", "#2196F3", "#FF9800", "#9C27B0", "#F44336"],
+    "description": "BPA-free water bottle with custom branding"
   },
   {
     "id": 3,
-    "name": "Custom Coffee Mug",
-    "category": "Drinkware",
-    "price": "$9.99",
-    "image": "/api/placeholder/300/300",
-    "colors": ["#ffffff", "#1f2937", "#059669", "#dc2626", "#f59e0b"],
-    "description": "Ceramic coffee mug with full-color custom printing"
+    "name": "Canvas Tote Bag", 
+    "category": "Bags",
+    "price": "$12.99",
+    "image": "/api/placeholder/400/400",
+    "colors": ["#795548", "#FF5722", "#607D8B"],
+    "description": "Heavy-duty canvas tote with custom print"
   },
   {
     "id": 4,
-    "name": "Branded T-Shirt",
-    "category": "Apparel",
-    "price": "$15.99",
-    "image": "/api/placeholder/300/300",
-    "colors": ["#1f2937", "#ffffff", "#dc2626", "#166534", "#1e40af"],
-    "description": "100% cotton t-shirt with screen printing or embroidery"
+    "name": "Travel Coffee Mug",
+    "category": "Drinkware", 
+    "price": "$16.99",
+    "image": "/api/placeholder/400/400",
+    "colors": ["#424242", "#8BC34A", "#E91E63", "#FF9800"],
+    "description": "Insulated travel mug with leak-proof lid"
   },
   {
     "id": 5,
-    "name": "Custom Pen Set",
-    "category": "Office",
-    "price": "$4.99",
-    "image": "/api/placeholder/300/300",
-    "colors": ["#1e40af", "#1f2937", "#dc2626", "#059669", "#7c3aed"],
-    "description": "Professional ballpoint pens with logo imprint"
+    "name": "Custom Polo Shirt",
+    "category": "Apparel",
+    "price": "$29.99",
+    "image": "/api/placeholder/400/400", 
+    "colors": ["#2E7D32", "#1976D2", "#C62828", "#F57C00"],
+    "description": "Premium polo shirt with embroidered logo"
   },
   {
     "id": 6,
-    "name": "Promotional Notebook",
-    "category": "Office",
-    "price": "$6.99",
-    "image": "/api/placeholder/300/300",
-    "colors": ["#1f2937", "#7c2d12", "#1e40af", "#059669", "#dc2626"],
-    "description": "High-quality notebook with custom cover design"
+    "name": "Drawstring Backpack",
+    "category": "Bags",
+    "price": "$8.99",
+    "image": "/api/placeholder/400/400",
+    "colors": ["#1976D2", "#388E3C", "#D32F2F", "#7B1FA2"],
+    "description": "Lightweight drawstring bag for events"
   },
   {
     "id": 7,
-    "name": "Custom Cap",
-    "category": "Apparel",
-    "price": "$13.99",
-    "image": "/api/placeholder/300/300",
-    "colors": ["#1f2937", "#dc2626", "#1e40af", "#059669", "#ffffff"],
-    "description": "Adjustable cap with embroidered logo"
+    "name": "Laptop Sleeve",
+    "category": "Tech",
+    "price": "$22.99", 
+    "image": "/api/placeholder/400/400",
+    "colors": ["#37474F", "#5D4037", "#455A64"],
+    "description": "Padded laptop sleeve with custom logo"
   },
   {
     "id": 8,
-    "name": "Phone Stand",
+    "name": "Wireless Power Bank",
     "category": "Tech",
-    "price": "$11.99",
-    "image": "/api/placeholder/300/300",
-    "colors": ["#1f2937", "#7c3aed", "#1e40af", "#dc2626", "#f59e0b"],
-    "description": "Adjustable phone stand with custom branding"
+    "price": "$34.99",
+    "image": "/api/placeholder/400/400",
+    "colors": ["#263238", "#3F51B5", "#009688"],
+    "description": "10,000mAh wireless charging power bank"
+  },
+  {
+    "id": 9,
+    "name": "Shopping Bag",
+    "category": "Bags", 
+    "price": "$6.99",
+    "image": "/api/placeholder/400/400",
+    "colors": ["#FFC107", "#4CAF50", "#2196F3", "#E91E63"],
+    "description": "Reusable shopping bag with custom design"
+  },
+  {
+    "id": 10,
+    "name": "Bucket Hat",
+    "category": "Apparel",
+    "price": "$14.99",
+    "image": "/api/placeholder/400/400", 
+    "colors": ["#212121", "#1976D2", "#388E3C"],
+    "description": "Cotton bucket hat with embroidered logo"
+  },
+  {
+    "id": 11,
+    "name": "Sports Water Bottle",
+    "category": "Drinkware",
+    "price": "$13.99",
+    "image": "/api/placeholder/400/400",
+    "colors": ["#CDDC39", "#FF9800", "#E91E63", "#9C27B0"],
+    "description": "32oz sports bottle with squeeze cap"
+  },
+  {
+    "id": 12,
+    "name": "Round Badge",
+    "category": "Accessories", 
+    "price": "$3.99",
+    "image": "/api/placeholder/400/400",
+    "colors": ["#F44336", "#2196F3", "#4CAF50", "#FF9800"],
+    "description": "Custom printed round badge or pin"
   }
 ]
