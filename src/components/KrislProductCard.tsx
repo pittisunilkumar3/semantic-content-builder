@@ -24,7 +24,7 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
   const [isLiked, setIsLiked] = useState(false);
 
   return (
-    <Card className="group relative overflow-hidden border-0 shadow-md hover:shadow-xl transition-all duration-300 bg-white">
+    <Card className="group relative overflow-hidden border-0 shadow-md hover:shadow-xl focus-within:shadow-xl transition-all duration-300 bg-white focus-within:ring-2 focus-within:ring-orange-400 focus-within:ring-offset-2">
       {/* Image Container */}
       <div className="relative overflow-hidden bg-gray-50">
         {/* SALE Badge */}
@@ -38,7 +38,7 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
 
         <img
           src={product.image}
-          alt={product.name}
+          alt={`${product.name} - ${product.description}`}
           className="w-full h-56 sm:h-64 lg:h-72 object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
         />
@@ -54,6 +54,7 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
                 e.stopPropagation();
                 setIsLiked(!isLiked);
               }}
+              aria-label={isLiked ? `Remove ${product.name} from wishlist` : `Add ${product.name} to wishlist`}
             >
               <Heart
                 className={`h-5 w-5 ${isLiked ? 'fill-red-500 text-red-500' : ''}`}
@@ -63,6 +64,7 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
               variant="ghost"
               size="icon"
               className="bg-white/90 hover:bg-white text-gray-800 rounded-full h-10 w-10"
+              aria-label={`Quick view ${product.name}`}
             >
               <Eye className="h-5 w-5" />
             </Button>
@@ -70,6 +72,7 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
               variant="ghost"
               size="icon"
               className="bg-white/90 hover:bg-white text-gray-800 rounded-full h-10 w-10"
+              aria-label={`Add ${product.name} to cart`}
             >
               <ShoppingCart className="h-5 w-5" />
             </Button>
@@ -98,7 +101,7 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
           {product.colors.map((color, index) => (
             <button
               key={index}
-              className={`w-6 h-6 lg:w-7 lg:h-7 rounded-full border-2 transition-all duration-200 ${
+              className={`w-6 h-6 lg:w-7 lg:h-7 rounded-full border-2 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-orange-400 focus:ring-offset-1 ${
                 selectedColor === color
                   ? 'border-gray-800 scale-110 shadow-md'
                   : 'border-gray-300 hover:border-gray-500'
@@ -106,6 +109,7 @@ const KrislProductCard = ({ product }: KrislProductCardProps) => {
               style={{ backgroundColor: color }}
               onClick={() => setSelectedColor(color)}
               aria-label={`Select color ${color}`}
+              aria-pressed={selectedColor === color}
             />
           ))}
         </div>

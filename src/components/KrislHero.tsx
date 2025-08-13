@@ -1,7 +1,21 @@
 import { Button } from "@/components/ui/button";
 import heroTumblers from "@/assets/hero-tumblers.jpg";
+import { useEffect } from "react";
 
 const KrislHero = () => {
+  // Preload critical images for better performance
+  useEffect(() => {
+    const criticalImages = [
+      "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=300&h=400&fit=crop&crop=center",
+      "https://images.unsplash.com/photo-1544735716-392fe2489ffa?w=300&h=400&fit=crop&crop=center"
+    ];
+
+    criticalImages.forEach(src => {
+      const img = new Image();
+      img.src = src;
+    });
+  }, []);
+
   return (
     <section className="bg-gray-50 py-16 lg:py-20">
       <div className="container mx-auto px-4">

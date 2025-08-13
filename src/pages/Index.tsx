@@ -6,7 +6,6 @@ import KrislProductShowcase from "@/components/KrislProductShowcase";
 import KrislProductGrid from "@/components/KrislProductGrid";
 import KrislLifestyleSection from "@/components/KrislLifestyleSection";
 import KrislBrandGallery from "@/components/KrislBrandGallery";
-import KrislBlogSection from "@/components/KrislBlogSection";
 import KrislFooter from "@/components/KrislFooter";
 
 const Index = () => {
@@ -21,7 +20,6 @@ const Index = () => {
         <KrislProductGrid />
         <KrislLifestyleSection />
         <KrislBrandGallery />
-        <KrislBlogSection />
       </main>
       <KrislFooter />
     </div>

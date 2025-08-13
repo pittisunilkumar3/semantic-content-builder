@@ -31,8 +31,8 @@ const KrislHeader = () => {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-orange-400">
-              <span className="text-white">K</span>risl
+            <div className="text-2xl lg:text-3xl font-bold">
+              <span className="text-white">K</span><span className="text-orange-400">risl</span>
             </div>
           </div>
 
@@ -56,13 +56,13 @@ const KrislHeader = () => {
                 className="pl-10 w-48 lg:w-64 bg-gray-900 border-gray-700 text-white placeholder-gray-400 focus:border-orange-400"
               />
             </div>
-            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400 hover:bg-gray-900">
+            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400 hover:bg-gray-900 min-h-[44px] min-w-[44px]" aria-label="Wishlist">
               <Heart className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400 hover:bg-gray-900">
+            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400 hover:bg-gray-900 min-h-[44px] min-w-[44px]" aria-label="User account">
               <User className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400 hover:bg-gray-900">
+            <Button variant="ghost" size="icon" className="text-white hover:text-orange-400 hover:bg-gray-900 min-h-[44px] min-w-[44px]" aria-label="Shopping cart">
               <ShoppingCart className="h-5 w-5" />
             </Button>
           </div>
@@ -71,8 +71,11 @@ const KrislHeader = () => {
           <Button
             variant="ghost"
             size="icon"
-            className="md:hidden text-white hover:bg-gray-900"
+            className="md:hidden text-white hover:bg-gray-900 focus:ring-2 focus:ring-orange-400"
             onClick={toggleMobileMenu}
+            aria-label={isMobileMenuOpen ? "Close mobile menu" : "Open mobile menu"}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMobileMenuOpen ? (
               <X className="h-6 w-6" />
@@ -84,7 +87,7 @@ const KrislHeader = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden border-t border-gray-800">
+          <div id="mobile-menu" className="md:hidden border-t border-gray-800" role="navigation" aria-label="Mobile navigation menu">
             <div className="py-4 space-y-4">
               {/* Mobile Search */}
               <div className="relative">
