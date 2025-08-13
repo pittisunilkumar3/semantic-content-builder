@@ -2,7 +2,10 @@ import KrislHeader from "@/components/KrislHeader";
 import KrislHero from "@/components/KrislHero";
 import KrislFeaturedProducts from "@/components/KrislFeaturedProducts";
 import KrislAboutSection from "@/components/KrislAboutSection";
+import KrislProductShowcase from "@/components/KrislProductShowcase";
 import KrislProductGrid from "@/components/KrislProductGrid";
+import KrislLifestyleSection from "@/components/KrislLifestyleSection";
+import KrislBrandGallery from "@/components/KrislBrandGallery";
 import KrislBlogSection from "@/components/KrislBlogSection";
 import KrislFooter from "@/components/KrislFooter";
 
@@ -14,7 +17,10 @@ const Index = () => {
         <KrislHero />
         <KrislFeaturedProducts />
         <KrislAboutSection />
+        <KrislProductShowcase />
         <KrislProductGrid />
+        <KrislLifestyleSection />
+        <KrislBrandGallery />
         <KrislBlogSection />
       </main>
       <KrislFooter />

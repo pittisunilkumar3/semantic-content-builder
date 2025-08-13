@@ -21,17 +21,18 @@ const KrislProductGrid = () => {
       name: "Shopping Bag",
       category: "Bags",
       price: "$6.99",
-      image: "/api/placeholder/400/400",
-      colors: ["#FFC107", "#4CAF50", "#2196F3", "#E91E63"],
-      description: "Reusable shopping bag with custom design"
+      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop&crop=center",
+      colors: ["#fbbf24", "#22c55e", "#3b82f6", "#ec4899"],
+      description: "Reusable shopping bag with custom design",
+      isOnSale: true
     },
     {
       id: 6,
       name: "Bucket Hat",
       category: "Apparel",
       price: "$14.99",
-      image: "/api/placeholder/400/400",
-      colors: ["#212121", "#1976D2", "#388E3C"],
+      image: "https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400&h=400&fit=crop&crop=center",
+      colors: ["#1f2937", "#3b82f6", "#22c55e"],
       description: "Cotton bucket hat with embroidered logo"
     },
     {
@@ -39,8 +40,8 @@ const KrislProductGrid = () => {
       name: "Sports Water Bottle",
       category: "Drinkware",
       price: "$13.99",
-      image: "/api/placeholder/400/400",
-      colors: ["#CDDC39", "#FF9800", "#E91E63", "#9C27B0"],
+      image: "https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=400&fit=crop&crop=center",
+      colors: ["#84cc16", "#f59e0b", "#ec4899", "#9c27b0"],
       description: "32oz sports bottle with squeeze cap"
     },
     {
@@ -48,8 +49,8 @@ const KrislProductGrid = () => {
       name: "Round Badge",
       category: "Accessories",
       price: "$3.99",
-      image: "/api/placeholder/400/400",
-      colors: ["#F44336", "#2196F3", "#4CAF50", "#FF9800"],
+      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=400&fit=crop&crop=center",
+      colors: ["#ef4444", "#3b82f6", "#22c55e", "#f59e0b"],
       description: "Custom printed round badge or pin"
     }
   ];
@@ -89,17 +90,17 @@ const KrislProductGrid = () => {
   }
 
   return (
-    <section className="py-12 lg:py-16 bg-white">
+    <section className="py-16 lg:py-20 bg-white">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-8 lg:mb-12">
-          <h2 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-900">
+        <div className="text-center mb-12 lg:mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
             LATEST TRENDS
           </h2>
         </div>
 
         {/* Products Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {products.map((product) => (
             <KrislProductCard key={product.id} product={product} />
           ))}
